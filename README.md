@@ -63,7 +63,7 @@ Method (CLI or Web UI)
 Maintenance Mode Activity Report
 ========================================
 Current Date/Time (UTC): 2025-05-08 15:37:18
-Current User: appatalks
+Current User's Login: admin
 ========================================
 
 Timestamp    : May 8 15:09:09
