@@ -10,7 +10,6 @@ This repository provides a user-friendly report of GitHub Enterprise Server (GHE
 
 ## Prerequisites
 
-- Bash shell (Linux or macOS)
 - Access to `/var/log/` and relevant log file with GHES maintenance records
 - Sufficient permissions to read system logs
 
