@@ -75,8 +75,8 @@ grep 'POST.*\/setup\/maintenance' "$HAPROXY_LOG" | grep -v "admin-shell" | while
     fi
     
     HOSTNAME=$(echo "$line" | awk '{print $4}' | sed 's/:$//')
-    USER="Web UI User"
-    ACTOR_IP="IP is not captured for WebUI"
+    USER="Admin"
+    ACTOR_IP="IPs are not captured for WebUI"
     ACTION="Maintenance Mode TOGGLED"
     METHOD="Web UI"
 
