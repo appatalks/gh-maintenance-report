@@ -79,8 +79,8 @@ Timestamp    : May 8 15:25:56
 Date/Time    : 2025-05-08 15:25:56.492Z
 Hostname     : <Hostname>
 User         : Admin (Web UI)
-Actor IP     : IP's are not captured from WebUI
-Action       : Maintenance Mode DISABLED
+Actor IP     : <IP>
+Action       : Maintenance Mode TOGGLED
 Method       : Web UI
 ----------------------------------------
 ```
