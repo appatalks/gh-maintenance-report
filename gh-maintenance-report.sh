@@ -42,6 +42,9 @@ done
 grep 'POST.*\/setup\/maintenance' "$HAPROXY_LOG" | grep -v "admin-shell" | while read -r line; do
     TIMESTAMP=$(echo "$line" | awk '{print $1" "$2" "$3}')
     
+    # Extract the client IP address from the haproxy log
+    CLIENT_IP=$(echo "$line" | awk '{print $6}' | cut -d':' -f1)
+    
     # Extract the log date
     LOG_DATE=$(echo "$line" | grep -oP '\[\d{2}/\w+/\d{4}:\d{2}:\d{2}:\d{2}')
     if [[ -n "$LOG_DATE" ]]; then
@@ -76,7 +79,7 @@ grep 'POST.*\/setup\/maintenance' "$HAPROXY_LOG" | grep -v "admin-shell" | while
     
     HOSTNAME=$(echo "$line" | awk '{print $4}' | sed 's/:$//')
     USER="Admin (Web UI)"
-    ACTOR_IP="IPs are not captured for WebUI"
+    ACTOR_IP="$CLIENT_IP"
     ACTION="Maintenance Mode TOGGLED"
     METHOD="Web UI"
 
