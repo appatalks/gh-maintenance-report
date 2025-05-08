@@ -36,7 +36,12 @@ This repository provides a user-friendly report of GitHub Enterprise Server (GHE
    ```bash
    sudo ./gh-maintenance-report.sh
    ```
-   Note: The script requires sudo to read /var/log/syslog.
+
+4. Optionally, call it directly with access to `github.com`:
+
+   ```bash
+   $ curl -sL https://raw.githubusercontent.com/appatalks/gh-maintenance-report/main/gh-maintenance-report.sh | bash
+   ```
 
 ### View the output
 
