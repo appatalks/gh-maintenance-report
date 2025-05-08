@@ -11,7 +11,7 @@ This repository provides a user-friendly report of GitHub Enterprise Server (GHE
 ## Prerequisites
 
 - Bash shell (Linux or macOS)
-- Access to `/var/log/syslog` or relevant log file with GHES maintenance records
+- Access to `/var/log/` and relevant log file with GHES maintenance records
 - Sufficient permissions to read system logs
 
 ## Usage
@@ -26,13 +26,13 @@ This repository provides a user-friendly report of GitHub Enterprise Server (GHE
 2. Make the script executable:
 
    ```bash
-   chmod +x maintenance_report.sh
+   chmod +x gh-maintenance-report.sh
    ```
 
 3. Run the script to generate a maintenance report:
 
    ```bash
-   sudo ./maintenance_report.sh
+   sudo ./gh-maintenance-report.sh
    ```
    Note: The script requires sudo to read /var/log/syslog.
 
