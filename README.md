@@ -3,7 +3,7 @@
 > [!NOTE]
 > Proof-of-Concept - Not GitHub official
 
-This repository provides a user-friendly report of GitHub Enterprise Server (GHES) maintenance set and unset periods. It parses system logs to identify maintenance mode changes and generates a readable report.
+This repository provides a user-friendly report of GitHub Enterprise Server (GHES) [maintenance set and unset](https://docs.github.com/en/enterprise-server@3.16/admin/administering-your-instance/configuring-maintenance-mode/enabling-and-scheduling-maintenance-mode) periods. It parses system logs to identify maintenance mode changes and generates a readable report.
 
 ## Features
 
